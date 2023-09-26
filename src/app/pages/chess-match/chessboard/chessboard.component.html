@@ -1,0 +1,23 @@
+<div class="chessboardContainer">
+
+  <ion-grid class="gridContainer">
+
+    <ion-row *ngFor="let item of [].constructor(10), let index = index, let odd=odd, let even=even" class="rowGrid">
+
+      <ion-col size="auto" class="headerChessboard" [ngClass]="{evenCol: even, oddCol: odd}">
+        {{ index !== 0 && index !== 9 ? index : '_'}}
+      </ion-col>
+
+      <ion-col *ngFor="let item of [].constructor(8), let indexCol = index"
+        [ngClass]="{evenCol: even, oddCol: odd, headerChessboard : index === 0 || index === 9}" class="colGrid">
+        <span *ngIf="index === 0 || index === 9">{{String.fromCharCode(indexCol + 65)}}</span>
+      </ion-col>
+
+      <ion-col size="auto" class="headerChessboard" [ngClass]="{evenCol: even, oddCol: odd}">
+        {{ index !== 0 && index !== 9 ? index : '_'}}
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</div>
