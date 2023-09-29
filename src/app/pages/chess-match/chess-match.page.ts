@@ -1,23 +1,16 @@
-import { Component, NgModule, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { ChessboardComponent } from './chessboard/chessboard.component';
+import { ChessMatchModule } from './chess-match.module';
 
-@NgModule({
-  imports: [IonicModule, CommonModule],
-  declarations: [ChessboardComponent],
-  exports: [ChessboardComponent]
-})
-
-export class ChessboardModule { }
 
 @Component({
   selector: 'app-chess-match',
   templateUrl: './chess-match.page.html',
   styleUrls: ['./chess-match.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, ChessboardModule]
+  imports: [IonicModule, CommonModule, FormsModule, ChessMatchModule]
 })
 export class ChessMatchPage implements OnInit {
 

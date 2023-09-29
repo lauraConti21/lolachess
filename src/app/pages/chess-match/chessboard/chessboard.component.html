@@ -10,7 +10,12 @@
 
       <ion-col *ngFor="let item of [].constructor(8), let indexCol = index"
         [ngClass]="{evenCol: even, oddCol: odd, headerChessboard : index === 0 || index === 9}" class="colGrid">
-        <span *ngIf="index === 0 || index === 9">{{String.fromCharCode(indexCol + 65)}}</span>
+        <span *ngIf="index === 0 || index === 9, else bodyChessboard">
+          {{String.fromCharCode(indexCol + 65)}}
+        </span>
+
+
+
       </ion-col>
 
       <ion-col size="auto" class="headerChessboard" [ngClass]="{evenCol: even, oddCol: odd}">
@@ -21,3 +26,10 @@
   </ion-grid>
 
 </div>
+
+<ng-template #bodyChessboard>
+  <!-- <div *ngFor="let item of chessboard.chessboardBoxConf, let indexCol = index" class="colGrid gl-flexCenter">
+    <chess-piece [boxConf]="item"></chess-piece>
+  </div> -->
+
+</ng-template>
