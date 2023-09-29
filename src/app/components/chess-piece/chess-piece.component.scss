@@ -1,0 +1,44 @@
+@import "../../../theme/mainStyle.scss";
+
+.chessboardContainer {
+    margin: 20px;
+    width: calc(100% - 40px);
+    height: auto;
+    border: 1px solid brown;
+}
+
+.gridContainer {
+    padding: 0;
+}
+
+//rihe
+.rowGrid {
+    padding: 0;
+}
+
+
+//colonne
+.colGrid {
+    padding: 0;
+    border: 1px solid brown;
+    width: calc((100% / 8));
+    font-size: 80px;
+    line-height: 1;
+    color: pink;
+
+}
+
+.colGrid:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+
+.whitePiece {
+    color: deepskyblue;
+}
+
+.pointer {
+    cursor: pointer;
+}

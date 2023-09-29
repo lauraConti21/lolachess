@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { ChessboardComponent } from './chessboard/chessboard.component';
+import { ChessPieceComponent } from '../../components/chess-piece/chess-piece.component';
 
 @NgModule({
   imports: [IonicModule, CommonModule],
@@ -17,7 +18,7 @@ export class ChessboardModule { }
   templateUrl: './chess-match.page.html',
   styleUrls: ['./chess-match.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, ChessboardModule]
+  imports: [IonicModule, CommonModule, FormsModule, ChessboardModule, ChessPieceComponent]
 })
 export class ChessMatchPage implements OnInit {
 

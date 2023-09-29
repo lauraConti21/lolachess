@@ -11,9 +11,8 @@ import { IonicModule } from '@ionic/angular';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
     { title: 'Gioca la tua partita!', url: '/chess-match', icon: 'paper-plane' },
 
   ];
-  constructor() {}
+  constructor() { }
 }
