@@ -13,10 +13,6 @@ export class ChessPieceComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
-
-
-
   }
 
 
