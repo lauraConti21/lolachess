@@ -1,9 +1,5 @@
 <div class="chessboardContainer gl-flexWrap">
 
-  <div *ngFor="let item of chessboard.chessboardBoxConf, let indexCol = index" class="colGrid gl-flexCenter"
-    [ngClass]="{whitePiece: item.colorWhite, pointer: item.piece}">
-    <span>{{item.piece}}</span>
-  </div>
-
+  <ng-template chessPiece></ng-template>
 
 </div>

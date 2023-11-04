@@ -6,11 +6,10 @@ import { ChessboardComponent } from './chessboard/chessboard.component';
 import { ChessPieceComponent } from '../../components/chess-piece/chess-piece.component';
 
 @NgModule({
-  imports: [IonicModule, CommonModule],
+  imports: [IonicModule, CommonModule, ChessPieceComponent],
   declarations: [ChessboardComponent],
   exports: [ChessboardComponent]
 })
-
 export class ChessboardModule { }
 
 @Component({
@@ -18,7 +17,7 @@ export class ChessboardModule { }
   templateUrl: './chess-match.page.html',
   styleUrls: ['./chess-match.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, ChessboardModule, ChessPieceComponent]
+  imports: [IonicModule, CommonModule, FormsModule, ChessboardModule]
 })
 export class ChessMatchPage implements OnInit {
 

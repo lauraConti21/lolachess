@@ -24,3 +24,13 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+.chessboardContainer p {
+    margin: 0;
+}
+
+.chessboardContainer > * {
+    width: 100%;
+    text-align: center;
+}

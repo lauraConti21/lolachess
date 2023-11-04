@@ -1,17 +1,10 @@
 @import "../../../theme/mainStyle.scss";
 
-.chessboardContainer {
-    margin: 20px;
-    width: calc(100% - 40px);
-    height: auto;
-    border: 1px solid brown;
-}
-
 .gridContainer {
     padding: 0;
 }
 
-//rihe
+//righe
 .rowGrid {
     padding: 0;
 }
@@ -28,11 +21,11 @@
 
 }
 
-.colGrid:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
+// .colGrid:after {
+//     content: "";
+//     display: block;
+//     padding-bottom: 100%;
+// }
 
 
 .whitePiece {

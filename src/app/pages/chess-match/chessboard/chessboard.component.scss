@@ -15,7 +15,7 @@
     padding: 0;
 }
 
-//rihe
+//righe
 .rowGrid {
 
     padding: 0;
@@ -49,14 +49,12 @@
 
 }
 
-.colGrid:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
+// .colGrid:after {
+//     content: "";
+//     display: block;
+//     padding-bottom: 100%;
+// }
 
-
-.prova {}
 
 .evenCol:nth-child(2n) {
     background-color: pink;
